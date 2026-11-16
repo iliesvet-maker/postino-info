@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Postino – Informativa sulla privacy</title>
+<style>
+  :root { --bg:#fff; --fg:#1b1f24; --muted:#5a6572; --line:#d8dee4; --accent:#0b57d0; }
+  @media (prefers-color-scheme: dark) { :root { --bg:#14181d; --fg:#e8ecf1; --muted:#9aa6b2; --line:#2b333c; --accent:#8ab4f8; } }
+  body { margin:0; background:var(--bg); color:var(--fg); font:17px/1.6 system-ui, sans-serif; }
+  main { max-width:42rem; margin:0 auto; padding:2.5rem 16px 4rem; }
+  h1 { font-size:1.7rem; margin:0 0 .25rem; } h2 { font-size:1.15rem; margin-top:2rem; }
+  .sub { color:var(--muted); margin:0 0 1.5rem; }
+  a { color:var(--accent); } hr { border:0; border-top:1px solid var(--line); margin:2rem 0; }
+  footer { color:var(--muted); font-size:.9rem; }
+</style>
+</head>
+<body>
+<main>
+  <h1>Informativa sulla privacy di Postino</h1>
+  <p class="sub">Ultimo aggiornamento: 16 novembre 2026</p>
+
+  <h2>Chi usa Postino</h2>
+  <p>Postino è un'applicazione personale usata da un solo utente, che ne è anche lo sviluppatore.
+  L'unico account Google collegato è quello del proprietario. Non ci sono altri utenti.</p>
+
+  <h2>Quali dati Google usa</h2>
+  <p>Con il permesso <code>https://www.googleapis.com/auth/gmail.modify</code> Postino legge i messaggi della casella
+  Gmail collegata (mittente, oggetto, data e testo) e gestisce le etichette. Lo scopo è unico:
+  classificare le email, archiviare quelle automatiche e preparare un riepilogo giornaliero per il proprietario.
+  I dati non vengono usati per nessun altro scopo.</p>
+
+  <h2>Cosa Postino non fa con i dati</h2>
+  <ul>
+    <li>Non invia email e non cancella o cestina messaggi.</li>
+    <li>Non vende i dati e non li trasferisce a terzi a fini di pubblicità o profilazione.</li>
+    <li>Non li usa per addestrare modelli di intelligenza artificiale generalizzati.</li>
+    <li>Nessuna persona legge le email attraverso Postino, salvo il proprietario della casella.</li>
+  </ul>
+
+  <h2>Elaborazione da parte di terzi</h2>
+  <p>Per classificare le email, il testo di ciascun messaggio (limitato a un estratto) viene inviato all'API di
+  Anthropic, che lo elabora per restituire la categoria e un breve riassunto. Anthropic agisce come fornitore
+  del servizio di elaborazione; si applicano le sue condizioni e la sua informativa disponibili sul sito
+  <a href="https://www.anthropic.com/legal/privacy">anthropic.com</a>.</p>
+
+  <h2>Dove vengono conservati</h2>
+  <p>Postino conserva soltanto brevi riassunti delle email smistate (mittente, oggetto, categoria, una riga di sintesi)
+  in un repository GitHub privato, accessibile solo al proprietario, e le credenziali di accesso come segreti
+  cifrati di GitHub. I riassunti più vecchi di 60 giorni vengono rimossi dal file corrente; la cronologia del repository
+  privato può conservarne le versioni precedenti, sempre visibili solo al proprietario.
+  Il testo completo dei messaggi non viene conservato da Postino.</p>
+
+  <h2>Conformità alla Google API Services User Data Policy</h2>
+  <p>L'uso e il trasferimento a qualsiasi altra app delle informazioni ricevute dalle API di Google rispetteranno la
+  <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>,
+  inclusi i requisiti di uso limitato (Limited Use).</p>
+
+  <h2>Revocare l'accesso</h2>
+  <p>Il proprietario può revocare in qualsiasi momento l'accesso di Postino dalla pagina
+  <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a>.
+  Dopo la revoca Postino non può più leggere né modificare la casella.</p>
+
+  <h2>Contatti</h2>
+  <p>Per domande su questa informativa scrivi tramite il profilo GitHub dello sviluppatore:
+  <a href="https://github.com/iliesvet-maker">github.com/iliesvet-maker</a>.</p>
+
+  <hr>
+  <footer><a href="index.html">Torna alla pagina di Postino</a></footer>
+</main>
+</body>
+</html>

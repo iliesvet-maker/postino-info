@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Postino – assistente personale per la posta</title>
+<style>
+  :root { --bg:#fff; --fg:#1b1f24; --muted:#5a6572; --line:#d8dee4; --accent:#0b57d0; }
+  @media (prefers-color-scheme: dark) { :root { --bg:#14181d; --fg:#e8ecf1; --muted:#9aa6b2; --line:#2b333c; --accent:#8ab4f8; } }
+  body { margin:0; background:var(--bg); color:var(--fg); font:17px/1.6 system-ui, sans-serif; }
+  main { max-width:42rem; margin:0 auto; padding:2.5rem 16px 4rem; }
+  h1 { font-size:1.8rem; margin:0 0 .25rem; } h2 { font-size:1.15rem; margin-top:2rem; }
+  .sub { color:var(--muted); margin:0 0 1.5rem; }
+  a { color:var(--accent); } hr { border:0; border-top:1px solid var(--line); margin:2rem 0; }
+  footer { color:var(--muted); font-size:.9rem; }
+</style>
+</head>
+<body>
+<main>
+  <h1>Postino</h1>
+  <p class="sub">Un assistente personale che mette in ordine la posta Gmail del suo unico utente.</p>
+
+  <h2>Cosa fa</h2>
+  <p>Postino è uno strumento personale, sviluppato e usato da una sola persona. Ogni ora legge le mail
+  recenti della casella Gmail del proprietario, assegna un'etichetta (per esempio Fornitori, Eventi, Amministrazione),
+  archivia le mail automatiche e ogni mattina prepara un riepilogo che inserisce nella stessa casella.</p>
+
+  <h2>Cosa non fa</h2>
+  <ul>
+    <li>Non invia mai email.</li>
+    <li>Non cancella e non sposta nel cestino alcuna email.</li>
+    <li>Non è disponibile ad altri utenti e non raccoglie dati di terzi.</li>
+  </ul>
+
+  <h2>Permessi Google richiesti</h2>
+  <p>Postino chiede un solo permesso Gmail, <code>gmail.modify</code>, necessario per leggere i messaggi,
+  gestire le etichette e archiviare. Nessun altro dato dell'account Google viene richiesto.</p>
+
+  <h2>Privacy</h2>
+  <p>Leggi l'<a href="privacy.html">informativa sulla privacy</a>.</p>
+
+  <hr>
+  <footer>Postino è un progetto personale e non è un prodotto commerciale.</footer>
+</main>
+</body>
+</html>
